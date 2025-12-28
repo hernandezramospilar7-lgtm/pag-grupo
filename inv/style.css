@@ -1,4 +1,4 @@
-    /*
+/*
         dotted
         dashed
         solid
@@ -11,9 +11,63 @@
         hidden
     */
    
+/* Título más pequeño y discreto */
 h1.titulo {
-    color: white(78, 78, 78);
+    color: #FFD700; /* Amarillo dorado */
     text-align: center;
+    font-size: 2rem; /* Tamaño más pequeño */
+    font-family: 'Arial Black', 'Arial Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 15px 0; /* Margen reducido */
+    padding: 10px 15px; /* Padding reducido */
+    text-shadow: 
+        0 0 5px rgba(255, 215, 0, 0.6), /* Resplandor más sutil */
+        0 0 10px rgba(255, 215, 0, 0.3), 
+        1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra más ligera */
+    
+    /* Efecto de gradiente suave */
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* Borde simple */
+    border-top: 2px solid rgba(255, 215, 0, 0.4);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+    
+    /* Animación muy sutil */
+    animation: tituloBrillo 4s ease-in-out infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+    /* Posicionamiento simple */
+    position: relative;
+    display: inline-block;
+}
+
+/* Animación más sutil para el brillo */
+@keyframes tituloBrillo {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255, 215, 0, 0.6),
+            0 0 10px rgba(255, 215, 0, 0.3),
+            1px 1px 3px rgba(0, 0, 0, 0.6);
+        transform: scale(1);
+    }
+    100% {
+        text-shadow: 
+            0 0 8px rgba(255, 215, 0, 0.7),
+            0 0 15px rgba(255, 215, 0, 0.4),
+            2px 2px 4px rgba(0, 0, 0, 0.7);
+        transform: scale(1.02);
+    }
+}
+
+/* Efecto hover más discreto */
+h1.titulo:hover {
+    animation-play-state: paused;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
 }
 
 body {
@@ -23,20 +77,318 @@ body {
     background-position: center center;
     background-attachment: fixed;
     margin: 0;
-    font-family: Arial sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
     padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay oscuro para mejor contraste */
+    background-blend-mode: darken;
 }
 
 
+/* BOTÓN MEJORADO - VERSIÓN PREMIUM */
 button {
-    background-color: yellow;
-    color: black;
-}
-.titulo {
-    color: yellow;
-    font-size: large 500px;
+    /* Colores y gradientes mejorados */
+    background: linear-gradient(145deg, #FFD700, #FFA500);
+    color: #222;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Efectos de sombra avanzados */
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+    
+    margin: 15px;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    
+    /* Borde decorativo */
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    
+    /* Efecto de brillo interno */
+    box-shadow: 
+        0 0 15px rgba(255, 215, 0, 0.4),
+        0 8px 20px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Pseudo-elemento para borde con gradiente */
+button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(145deg, #FFD700, #FF8C00, #FFD700);
+    border-radius: 18px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Pseudo-elemento para efecto de brillo interno */
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.4s, height 0.4s;
+    z-index: 0;
+}
+
+/* Efecto hover premium */
+button:hover {
+    background: linear-gradient(145deg, #FFC800, #FF9500);
+    color: #111;
+    transform: translateY(-6px) scale(1.05);
+    
+    /* Sombras más pronunciadas en hover */
+    box-shadow: 
+        0 0 25px rgba(255, 215, 0, 0.6),
+        0 12px 30px rgba(0, 0, 0, 0.4),
+        0 6px 10px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+    
+    /* Mostrar borde con gradiente */
+    border-color: transparent;
+}
+
+/* Mostrar borde con gradiente en hover */
+button:hover::before {
+    opacity: 1;
+}
+
+/* Efecto de brillo al hacer hover */
+button:hover::after {
+    width: 120%;
+    height: 120%;
+}
+
+/* Efecto activo (clic) mejorado */
+button:active {
+    transform: translateY(-2px) scale(0.98);
+    transition: all 0.1s ease;
+    
+    /* Sombras reducidas para efecto de presión */
+    box-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.5),
+        0 4px 8px rgba(0, 0, 0, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        inset 0 2px 0 rgba(0, 0, 0, 0.15),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto de foco para accesibilidad */
+button:focus {
+    outline: none;
+    animation: pulseFocus 1.5s infinite;
+}
+
+/* Animación de pulso para foco */
+@keyframes pulseFocus {
+    0%, 100% {
+        box-shadow: 
+            0 0 0 0 rgba(255, 215, 0, 0.7),
+            0 8px 20px rgba(0, 0, 0, 0.3),
+            0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 0 6px rgba(255, 215, 0, 0),
+            0 8px 20px rgba(0, 0, 0, 0.3),
+            0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Estado deshabilitado mejorado */
+button:disabled {
+    background: linear-gradient(145deg, #666, #888);
+    color: #999;
+    cursor: not-allowed;
+    transform: none;
+    
+    /* Eliminar todos los efectos especiales */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    
+    border: 2px solid #555;
+    opacity: 0.7;
+}
+
+button:disabled::before,
+button:disabled::after {
+    display: none;
+}
+
+/* Variantes de botones */
+button.success {
+    background: linear-gradient(145deg, #28a745, #1e7e34);
+}
+
+button.success:hover {
+    background: linear-gradient(145deg, #24a044, #1a6b2d);
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.6), 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+button.danger {
+    background: linear-gradient(145deg, #dc3545, #bd2130);
+}
+
+button.danger:hover {
+    background: linear-gradient(145deg, #c82333, #a71e2a);
+    box-shadow: 0 0 25px rgba(220, 53, 69, 0.6), 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+button.info {
+    background: linear-gradient(145deg, #17a2b8, #138496);
+}
+
+button.info:hover {
+    background: linear-gradient(145deg, #1595ab, #117a8b);
+    box-shadow: 0 0 25px rgba(23, 162, 184, 0.6), 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Botón pequeño */
+button.small {
+    padding: 10px 25px;
+    font-size: 14px;
+    min-width: 140px;
+    border-radius: 12px;
+}
+
+/* Botón grande */
+button.large {
+    padding: 20px 50px;
+    font-size: 22px;
+    min-width: 250px;
+    border-radius: 20px;
+}
+
+/* Botón con icono */
+button.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Icono dentro del botón (usando pseudo-elemento o ícono real) */
+button.icon-btn::before {
+    content: '→';
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+button.icon-btn:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Efecto de carga */
+button.loading {
+    position: relative;
+    color: transparent;
+}
+
+button.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    button {
+        padding: 14px 30px;
+        font-size: 16px;
+        min-width: 180px;
+    }
+    
+    button.large {
+        padding: 18px 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 12px 25px;
+        font-size: 14px;
+        min-width: 160px;
+        border-radius: 14px;
+    }
+    
+    button.small {
+        padding: 8px 20px;
+        min-width: 120px;
+    }
+}
+
+/* Clases para títulos adicionales... */
+
+/* Clase para títulos aún más pequeños (opcional) */
+.titulo.pequeno {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 15px 0 10px 0;
+    padding: 8px 12px;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    animation: none;
+}
+
+/* Clase para títulos mínimos */
+.titulo.minimo {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: none;
+    animation: none;
+    text-shadow: 
+        0 0 3px rgba(255, 215, 0, 0.5),
+        1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: none;
+    color: #FFD700;
+}
 
