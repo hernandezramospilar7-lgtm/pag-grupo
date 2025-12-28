@@ -1,21 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free fire</title>
-    <link rel="stylesheet" href="style.css"
+    <title>🎮 Free Fire Grupo WhatsApp - Únete a la Comunidad</title>
+    <meta name="description" content="Únete al grupo oficial de Free Fire en WhatsApp. Torneos, sorteos y comunidad activa 24/7. ¡Conecta con jugadores de todo el mundo!">
+    <meta name="keywords" content="Free Fire, WhatsApp, grupo, gamers, torneos, sorteos, comunidad">
+    <meta property="og:title" content="Free Fire Grupo WhatsApp">
+    <meta property="og:description" content="Comunidad activa de Free Fire en WhatsApp">
+    <meta property="og:image" content="img/preview.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <script src="base de datos.js"></script>
 </head>
 <body>
-    <h1 class="titulo">grupo de watsapp de free fire</h1>
-    <video controls loop>
-        <source src="vid/Brazilian_Freestyle_🇧🇷🔥(480p).mp4" type="video/mp4">
-    </video>
-<div>
-    <a href="https://chat.whatsapp.com/LWIJKYpo686V32sqmNAAd">
-        <button>link de grupo</button>
+    <!-- Partículas de fondo -->
+    <div id="particles-js"></div>
+    
+    <!-- Efecto de neón alrededor -->
+    <div class="neon-border"></div>
+    
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Logo y título -->
+        <header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-fire"></i>
+                    <span class="logo-text">FF</span>
+                </div>
+                <h1 class="titulo">
+                    <span class="titulo-texto">GRUPO WHATSAPP</span>
+                    <span class="titulo-sub">FREE FIRE</span>
+                </h1>
+                <div class="badge-ultra">ULTRA ACTIVO</div>
+            </div>
+        </header>
+
+        <!-- Estadísticas en tiempo real -->
+        <section class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>JUGADORES</h3>
+                        <div class="stat-number" id="contador-jugadores">Cargando...</div>
+                        <div class="stat-trend">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+12 hoy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>TORNEOS</h3>
+                        <div class="stat-number">47</div>
+                        <div class="stat-trend">
+                            <i class="fas fa-calendar"></i>
+                            <span>Próximo: Hoy 20:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>PREMIOS</h3>
+                        <div class="stat-number">1,250+</div>
+                        <div class="stat-trend">
+                            <i class="fas fa-diamond"></i>
+                            <span>Diamantes & Skin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video destacado -->
+        <section class="video-section">
+            <div class="section-header">
+                <h2><i class="fas fa-play-circle"></i> MOMENTOS ÉPICOS</h2>
+                <p>Descubre las mejores jugadas de nuestra comunidad</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video controls loop autoplay muted playsinline>
+                        <source src="vid/Brazilian_Freestyle_🇧🇷🔥(480p).mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-controls">
+                    <button class="btn-control active"><i class="fas fa-fire"></i> Épico</button>
+                    <button class="btn-control"><i class="fas fa-trophy"></i> Torneos</button>
+                    <button class="btn-control"><i class="fas fa-star"></i> Destacados</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón principal -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2><i class="fab fa-whatsapp"></i> ¡ÚNETE AHORA!</h2>
+                <p class="cta-subtitle">Conecta con +500 jugadores activos diariamente</p>
+                
+                <div class="cta-button-wrapper">
+                    <a href="https://chat.whatsapp.com/LWIJKYpo686V32sqmNAAd" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="cta-button">
+                        <div class="button-content">
+                            <div class="button-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="button-text">
+                                <span class="button-main">ENTRAR AL GRUPO</span>
+                                <span class="button-sub">¡Click aquí para unirte!</span>
+                            </div>
+                            <div class="button-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="button-particles"></div>
+                    </a>
+                    
+                    <div class="cta-stats">
+                        <div class="stat">
+                            <i class="fas fa-bolt"></i>
+                            <span>Último ingreso: <strong>Hace 2 min</strong></span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Grupo verificado ✓</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> ¿POR QUÉ UNIRTE?</h2>
+                <p>Todo lo que ofrece nuestra comunidad</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Juega en Equipo</h3>
+                    <p>Encuentra compañeros para ranked, casual y torneos. Nunca juegues solo otra vez.</p>
+                    <div class="feature-badge">+300 equipos</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Sorteos Diarios</h3>
+                    <p>Participa en sorteos de diamantes, skins exclusivas y pases de elite totalmente gratis.</p>
+                    <div class="feature-badge">1,250+ premios</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Mejora tu Skill</h3>
+                    <p>Aprende estrategias, tácticas y tips de jugadores profesionales de Free Fire.</p>
+                    <div class="feature-badge">Guías expertas</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Chat activo 24/7 con jugadores de toda Latinoamérica. Siempre hay alguien en línea.</p>
+                    <div class="feature-badge">24/7 online</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2><i class="fas fa-comment-dots"></i> OPINIONES DE JUGADORES</h2>
+                <p>Lo que dicen nuestros miembros</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=FreeFire1" alt="Jugador 1" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Carlos "ProShot"</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Gracias al grupo encontré mi equipo para torneos. ¡Ganamos 3 campeonatos este mes y muchos diamantes!"</p>
+                    <div class="testimonial-rank">Rango: Heroico</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=FreeFire2" alt="Jugador 2" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Ana "DiamondQueen"</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Me gané 500 diamantes en un sorteo y aprendí estrategias que me hicieron subir de platino a diamante."</p>
+                    <div class="testimonial-rank">Rango: Diamante III</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=FreeFire3" alt="Jugador 3" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Miguel "SniperPro"</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"La mejor comunidad de Free Fire. Siempre hay alguien para jugar y el ambiente es increíble."</p>
+                    <div class="testimonial-rank">Rango: Gran Maestro</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2><i class="fas fa-question-circle"></i> PREGUNTAS FRECUENTES</h2>
+                <p>Todo lo que necesitas saber</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿El grupo es gratuito?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, completamente gratuito. No cobramos por ingresar ni por participar en torneos y sorteos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Necesito ser buen jugador para entrar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡No! Aceptamos jugadores de todos los niveles, desde principiantes hasta profesionales.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Con qué frecuencia hay torneos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Organizamos torneos semanales y eventos especiales cada mes con grandes premios.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Hay reglas en el grupo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, mantenemos un ambiente respetuoso. Prohibimos spam, insultos y comportamientos tóxicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <i class="fas fa-fire"></i>
+                        <span>Free Fire WhatsApp</span>
+                    </div>
+                    <p class="footer-tagline">La comunidad más activa de Free Fire</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Comunidad</h4>
+                        <a href="#"><i class="fas fa-users"></i> Jugadores Online</a>
+                        <a href="#"><i class="fas fa-trophy"></i> Torneos</a>
+                        <a href="#"><i class="fas fa-gift"></i> Sorteos</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Recursos</h4>
+                        <a href="#"><i class="fas fa-book"></i> Guías</a>
+                        <a href="#"><i class="fas fa-video"></i> Gameplays</a>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Estadísticas</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Conéctate</h4>
+                        <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Free Fire WhatsApp Community. No afiliado oficialmente con Garena.</p>
+                <div class="footer-stats">
+                    <span><i class="fas fa-eye"></i> <span id="visitas-totales">1,250</span> visitas hoy</span>
+                    <span><i class="fas fa-user-clock"></i> Actualizado hace 2 min</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="java.js"></script>
+    <script src="efectos.js"></script>
+    
+    <!-- Script de inicialización -->
+    <script>
+        // Inicializar efectos avanzados
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🎮 Free Fire Community - Inicializando...');
+            
+            // Inicializar partículas de fondo
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: { value: 80, density: { enable: true, value_area: 800 } },
+                        color: { value: ["#FF0000", "#FFD700", "#00FF00"] },
+                        shape: { type: "circle" },
+                        opacity: { value: 0.5, random: true },
+                        size: { value: 3, random: true },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: "#FFD700",
+                            opacity: 0.2,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: "none",
+                            random: true,
+                            straight: false,
+                            out_mode: "out",
+                            bounce: false
+                        }
+                    },
+                    interactivity: {
+                        detect_on: "canvas",
+                        events: {
+                            onhover: { enable: true, mode: "repulse" },
+                            onclick: { enable: true, mode: "push" }
+                        }
+                    }
+                });
+            }
+            
+            // FAQ interactivo
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    answer.classList.toggle('active');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+            
+            // Simular estadísticas dinámicas
+            setInterval(() => {
+                const contador = document.getElementById('contador-jugadores');
+                if (contador && window.contadorFF) {
+                    contador.textContent = window.contadorFF.contadorActual.toLocaleString('es-ES');
+                }
+                
+                // Actualizar visitas
+                const visitas = document.getElementById('visitas-totales');
+                if (visitas) {
+                    const actual = parseInt(visitas.textContent.replace(/,/g, ''));
+                    visitas.textContent = (actual + Math.floor(Math.random() * 3)).toLocaleString('es-ES');
+                }
+            }, 30000);
+            
+            console.log('✅ Página completamente cargada y optimizada');
+        });
         
-    </a>
-</div>
+        // Efecto de confeti al hacer clic en el botón principal
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            if (!this.href.includes('whatsapp')) return;
+            
+            // Crear confeti
+            for(let i = 0; i < 50; i++) {
+                setTimeout(() => crearConfeti(e.clientX, e.clientY), i * 20);
+            }
+            
+            // Sonido de confirmación
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime);
+                oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1);
+                oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.2);
+                
+                gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                
+                oscillator.start();
+                oscillator.stop(audioContext.currentTime + 0.5);
+            } catch (error) {
+                console.log('🔇 Audio no disponible');
+            }
+        });
+        
+        function crearConfeti(x, y) {
+            const confeti = document.createElement('div');
+            confeti.style.cssText = `
+                position: fixed;
+                width: 10px;
+                height: 10px;
+                background: ${['#FF0000', '#FFD700', '#00FF00', '#1E90FF'][Math.floor(Math.random() * 4)]};
+                border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+                pointer-events: none;
+                z-index: 10000;
+                top: ${y}px;
+                left: ${x}px;
+                transform: rotate(${Math.random() * 360}deg);
+            `;
+            
+            document.body.appendChild(confeti);
+            
+            // Animación
+            const angulo = Math.random() * Math.PI * 2;
+            const velocidad = 2 + Math.random() * 4;
+            const dx = Math.cos(angulo) * velocidad;
+            const dy = Math.sin(angulo) * velocidad;
+            const rotacion = (Math.random() - 0.5) * 10;
+            
+            let posX = x;
+            let posY = y;
+            let rot = 0;
+            let gravedad = 0.1;
+            let velocidadY = -Math.random() * 5;
+            let opacidad = 1;
+            
+            function animar() {
+                posX += dx;
+                posY += velocidadY;
+                rot += rotacion;
+                velocidadY += gravedad;
+                opacidad -= 0.01;
+                
+                confeti.style.left = posX + 'px';
+                confeti.style.top = posY + 'px';
+                confeti.style.transform = `rotate(${rot}deg)`;
+                confeti.style.opacity = opacidad;
+                
+                if (opacidad > 0) {
+                    requestAnimationFrame(animar);
+                } else {
+                    confeti.remove();
+                }
+            }
+            
+            animar();
+        }
+    </script>
 </body>
 </html>
