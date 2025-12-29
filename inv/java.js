@@ -1,8 +1,3 @@
-/**
- * Efectos Avanzados para Free Fire Community
- * Animaciones, interacciones y efectos visuales premium
- */
-
 class EfectosFreeFire {
     constructor() {
         this.efectosActivos = true;
