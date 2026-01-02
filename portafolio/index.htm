@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alain | Desarrollador Frontend</title>
+    <meta name="description" content="Portafolio de Alain - Desarrollador Frontend especializado en HTML, CSS y JavaScript">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#inicio" class="logo">Alain</a>
+                <span class="tagline">Frontend Developer</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight">Alain</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text" id="typingText"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Desarrollador Frontend apasionado por crear experiencias web modernas, rápidas y accesibles. Especializado en HTML, CSS y JavaScript puro.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <i class="fas fa-code"></i> Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contactar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">portfolio.js</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">alain</span> = {
+    <span class="code-property">nombre</span>: <span class="code-string">"Alain"</span>,
+    <span class="code-property">especialidad</span>: <span class="code-string">"Frontend Developer"</span>,
+    <span class="code-property">tecnologias</span>: [
+        <span class="code-string">"HTML5"</span>, 
+        <span class="code-string">"CSS3"</span>, 
+        <span class="code-string">"JavaScript"</span>
+    ],
+    <span class="code-property">proyectos</span>: <span class="code-number">15</span>,
+    <span class="code-property">disponible</span>: <span class="code-boolean">true</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-function">crearProyecto</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Experiencia web excepcional"</span>;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+                <p class="section-subtitle">Conoce más sobre mi trayectoria y pasión por el desarrollo web</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Apasionado por el código limpio y las experiencias únicas</h3>
+                    <p>
+                        Soy un desarrollador frontend especializado en crear interfaces web modernas y responsivas. 
+                        Me enfoco en escribir código limpio, semántico y accesible que funcione perfectamente en todos los dispositivos.
+                    </p>
+                    <p>
+                        Mi enfoque combina las mejores prácticas de desarrollo con un diseño atractivo, 
+                        asegurando que cada proyecto no solo funcione bien, sino que también ofrezca una experiencia de usuario excepcional.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">% Dedicación</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="tech-icons">
+                            <div class="tech-icon html">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-icon css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-icon js">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+                <p class="section-subtitle">Aplicaciones web desarrolladas con HTML, CSS y JavaScript puro</p>
+            </div>
+            
+            <div class="projects-filter" id="projectsFilter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Proyectos se cargan dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis <span class="highlight">Habilidades</span></h2>
+                <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Habilidades se cargan dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contácta<span class="highlight">me</span></h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Envíame un mensaje directo</h3>
+                    <p>Puedes contactarme directamente a través de email o copiar mi dirección para escribirme más tarde.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email Directo</h4>
+                                <p>Haz clic para enviar un email desde tu cliente de correo</p>
+                                <a href="mailto:danielalain559@gmail.com?subject=Contacto%20desde%20portafolio&body=Hola%20Alain,%0D%0A%0D%0AVi%20tu%20portafolio%20y%20me%20gustaría%20contactarte%20por..." 
+                                   class="btn btn-primary email-btn">
+                                    <i class="fas fa-paper-plane"></i> Enviar Email
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Copiar Email</h4>
+                                <p>Copia mi dirección de email al portapapeles</p>
+                                <button class="btn btn-secondary copy-btn" id="copyEmailBtn">
+                                    <i class="fas fa-copy"></i> Copiar Email
+                                </button>
+                                <div class="email-display">
+                                    <code>danielalain559@gmail.com</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>O escríbeme aquí</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Nombre
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Mensaje
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hola Alain, me gustaría contactarte por..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Tu mensaje se enviará directamente a mi email
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">Alain</a>
+                    <p>Desarrollador Frontend especializado en HTML, CSS y JavaScript</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#inicio" class="footer-link">Inicio</a>
+                    <a href="#sobre-mi" class="footer-link">Sobre Mí</a>
+                    <a href="#proyectos" class="footer-link">Proyectos</a>
+                    <a href="#habilidades" class="footer-link">Habilidades</a>
+                    <a href="#contacto" class="footer-link">Contacto</a>
+                </div>
+                
+                <div class="footer-tech">
+                    <h4>Tecnologías</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">Web Design</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Alain. Todos los derechos reservados.</p>
+                <p>Desarrollado con <i class="fas fa-heart"></i> usando HTML, CSS y JavaScript puro</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botones flotantes -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Notificaciones -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
